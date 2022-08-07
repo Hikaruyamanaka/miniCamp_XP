@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Conceitos HTML</title>
+  </head>
+
+  <body>
+
+    <header>
+      <!-- Função para levar até o topo 'id' se conecta com o 'href'lá embaixo -->
+      <a id="top-of-page"></a>
+      <h1>Conteitos HTML</h1>
+    </header>
+
+    <main>
+      <!-- Tamanhos de fontes para Títulos e sun títulos -->
+      <h1>Texto h1</h1>
+      <h2>Texto h2</h2>
+      <h3>Texto h3</h3>
+      <h4>Texto h4</h4>
+      <h5>Texto h5</h5>
+      <h6>Texto h6</h6>
+
+      <!-- Parágrafo -->
+      <p>Exemplo de parágrafo 1</p>
+      <p>Exemplo de parágrafo 2</p>
+
+      <!-- prettier-ignore -->
+      <p>Exemplo de parágrafo 3</p>
+
+      <!-- Lista ordenada -->
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+
+      <!-- Lista não ordenada -->
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+
+      <table>
+        <thead>
+
+          <!-- Título da tabela -->
+          <caption>
+            Tecnologias Web
+          </caption>
+
+          <!-- 'tr' e 'th' deixam o texto em negrito e centralizado -->
+          <tr>
+            <th>Tipo</th>
+            <th>Descrição</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Hyper Text Makeup Language</td>
+          </tr>
+
+          <tr>
+            <td>CSS</td>
+            <td>Cascading Style Sheets</td>
+          </tr>
+
+          <tr>
+            <td>Javascript</td>
+            <td>Também conhecido como ECMAScript</td>
+          </tr>
+
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td>Total de Tecnologias</td>
+            <td>3</td>
+          </tr>
+
+        </tfoot>
+      </table>
+
+      <figure>
+        <figcaption>One Piece, meu anime favorito</figcaption>
+        <img
+          width="300"
+          src="../assets/one-piece-chapeus-de-palha.jpg"
+          alt="One Piece"
+        />
+      </figure>
+
+      <!-- div ele é blocante, o texto quebra para outra linha e não tem espaçamento entre as os itens como o parágrafo -->
+      <p>
+        <div>Exemplo de div 1</div>
+        <div>Exemplo de div 2</div>
+      </p>
+
+      <!-- span ele não é blocante, o texto fica na mesma linha-->
+      <p>
+        <span>Exemplo de span 1</span>
+        <span>Exemplo de span 2</span>
+      </p>
+
+      <!-- Função para levar até o topo 2-->
+      <a href="#top-of-page">Voltar ao topo da página</a>
+
+      <!-- Te leva para outra página HTML -->
+      <a href="./conteudo.html">Ir para conteúdo</a>
+
+      <!-- Te leva para um outro site e o 'target=_blank' abre o site em uma nova aba-->
+      <a href="https://www.google.com" target="_blank">Ir para o Google</a>
+
+      <!-- Cria um botão para clicar -->
+      <p>
+        <button>Clique aqui</button>
+      </p>
+
+      <!-- Cria um campo para digitar -->
+      <p>
+        <input type="text" />
+      </p>
+    </main>
+
+    <script defer src="./js/script.js"></script>
+  </body>
+</html>

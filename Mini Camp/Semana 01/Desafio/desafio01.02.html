@@ -1,0 +1,26 @@
+<html>
+<script>
+
+    //function verificaNumeroPrimo(numero) {
+    var verificaNumeroPrimo = (numero) => {
+        let primo = true;
+
+        if (numero < 2) {
+            // return numero + ' não é primo';
+            primo = false;
+        } else {
+            
+            for (var i = 2; i < numero; i++) {
+                if (numero % i === 0) {        
+                    // return numero + ' não é primo';
+                    primo = false;
+                } 
+            }
+
+        }
+
+        return numero + (!primo?' não':'') + ' é primo';
+    }
+</script>
+</html>
+

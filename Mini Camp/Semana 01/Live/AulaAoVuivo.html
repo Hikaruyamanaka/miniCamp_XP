@@ -1,0 +1,53 @@
+<html>
+    <script>
+
+        // Verificar se um número é divisivel por 3 ou 5
+        // Caso seja, retornar 'true'
+        // Caso não seja, retornar 'false'
+
+        function verificaDivisivel(numero) {
+
+            /* 
+            if(numero % 3 === 0 || numero % 5 === 0) {
+                return true;
+            } else {
+                return false;
+            }
+            */
+
+            return (numero % 3 === 0 || numero % 5 === 0)
+        }
+
+        function verificaIntervalo(inicial, final) {
+
+            var contador = 0;
+            var soma = 0;
+            var multiplicacao = 1;
+            var controle = inicial;
+
+            // while (controle <= final) {
+                for (var controle = inicial; controle <= final; controle = controle ++) {
+
+                if (verificaDivisivel(controle)) {
+                    console.log(controle);
+                    // contador = contador + 1;
+                    contador ++;                    
+                    // soma = soma + controle;
+                    soma += controle; // a linha 31 e 32 fazem a mesma coisa, funciona com -   *   /   
+                    // expoente 2 ^ 3  ou 2 ** 3 ou 2 * 2 * 2
+                    multiplicacao *= controle;
+                }
+
+                // controle = controle + 1;
+            }
+
+            // console.log(`Quantidade: ${controle}`); uma das formas diferente de se imprimir na tela
+            console.log('Quantidade: ', controle);
+            console.log('Soma: ', soma);
+            console.log('Multiplicação: ', multiplicacao);
+
+
+        }
+
+    </script>
+</html>

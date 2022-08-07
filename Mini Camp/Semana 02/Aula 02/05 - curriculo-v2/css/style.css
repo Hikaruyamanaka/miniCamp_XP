@@ -1,0 +1,57 @@
+body {
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: lightgray;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+table {
+    margin: auto;
+}
+
+th, td {
+    padding: 6px;
+}
+/* even = par*/
+tbody tr:nth-child(even) {
+    background-color: #DDD;
+}
+
+/* odd = impar
+tbody tr:nth-child(odd) {
+    background-color: #DDD;
+}   */
+
+tbody tr:hover {
+    font-weight: bold;
+    user-select: none;
+    cursor: default;
+    /* cursor: none; # O cursor some ao passar em cima da tabela(Tecnologias: Tecnologia / Tempo)  */
+}
+
+/* Utilizando o '.' significa que esta referenciando uma classe /  A classe pode ser utilizada em todos os lugares onde quiser. */
+.title {
+    color: darkred;
+}
+
+.author {
+    text-align: right;
+    font-style: italic;
+}
+
+/* Atribui a cor brancaa todos os parágrafos 'p' 
+p { color: white }
+*/
+

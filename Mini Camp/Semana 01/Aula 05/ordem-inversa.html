@@ -1,0 +1,40 @@
+<html>
+    <script>
+        // Criar uma função que recebe uma palavra como parâmetro e retorna esta palavra invertida
+
+        // 1- Receber a palavra como parâmetro
+        // 2- Criar uma variável temporária para armanezar o resultado
+        // 3- Iterar a palavra de trás para frente, armazenando letra por letra na variável temporária
+
+        // 0123456
+        // abacate
+        // length = 7
+        // 6543210
+        
+        // for:
+
+        function ordemInversa(palavra) {
+            var palavraInvertida = '';
+
+            for (var i = palavra.length - 1; i >= 0; i--) {
+                palavraInvertida = palavraInvertida + palavra[i];
+            }
+            return palavraInvertida;
+        }
+        
+        // while:
+
+        function ordemInversa(palavra) {
+            var palavraInvertida = '';
+            var i = palavra.length - 1;
+
+            while (i >= 0) {
+            palavraInvertida = palavraInvertida + palavra[i];
+
+            i--;
+            }
+            return palavraInvertida;
+        }
+
+    </script>
+</html>
